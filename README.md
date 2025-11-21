@@ -1,5 +1,7 @@
 ## Basic Projects — Collection
 
+![Gemini_Generated_Image_gm288dgm288dgm28](https://github.com/user-attachments/assets/bb16c378-fc9f-4c2e-9b11-7ae0576245dd)
+
 This repository contains a set of small, self-contained frontend projects built with plain HTML, CSS, and JavaScript. Each project is in its own folder and can be run by opening the project's `index.html` in a browser or serving the repo with a simple static server.
 
 ### Quick links
