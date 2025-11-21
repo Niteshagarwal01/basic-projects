@@ -11,6 +11,7 @@
       <div class="screen active" id="start-screen">
         <h1>Quiz Time!</h1>
         <p>Test your knowledge with these fun questions</p>
+        <p class="small-note">High score: <span id="high-score">0</span></p>
         <button id="start-btn">Start Quiz</button>
       </div>
 
@@ -23,26 +24,34 @@
             </p>
 
             <p>Score: <span id="score">0</span></p>
+            <p>Time: <span id="timer">15</span>s</p>
           </div>
         </div>
 
-        <div id="answers-container" class="answers-container">
-          <!-- Answer buttons will be insterted here from our js code later at some point -->
-        </div>
+        <div id="answers-container" class="answers-container"></div>
 
         <div class="progress-bar">
           <div id="progress" class="progress"></div>
         </div>
+        <p class="hint">Tip: press 1–4 to select answers from the keyboard</p>
       </div>
 
       <div id="result-screen" class="screen">
         <h1>Quiz Results</h1>
         <div class="result-info">
-          <p>You scored <span id="final-score">0</span> out of <span id="max-score">5</span></p>
+          <div class="result-summary">
+            <div class="score-big"><span id="final-score">0</span>/<span id="max-score">5</span></div>
+            <div class="score-percent"><span id="final-percent">0</span>%</div>
+          </div>
 
           <div id="result-message">Good job!</div>
         </div>
-        <button id="restart-btn">Restart Quiz</button>
+        <div class="result-actions">
+          <button id="restart-btn">Restart Quiz</button>
+          <button id="review-btn">Review Answers</button>
+        </div>
+
+        <div id="result-details" class="result-details" aria-live="polite"></div>
       </div>
     </div>
 
